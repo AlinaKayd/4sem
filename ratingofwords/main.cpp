@@ -81,7 +81,7 @@ map<string, int> Make_map (ifstream& fd, int& n)
 int main() {
     int n;
     cin >> n;
-    ifstream fd = File_open("/Users/mac/Desktop/prog/ratingofwords/ratingofwords/text.txt");
+    ifstream fd = File_open("text.txt");
     Make_map(fd, n);
     return 0;
 }
