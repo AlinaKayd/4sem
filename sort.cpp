@@ -11,7 +11,7 @@
 #include <vector>
 using namespace std;
 
-bool compare(const string& lhs, const string& rhs)
+bool Compare(const string& lhs, const string& rhs)
 {
     if(lhs.size()>rhs.size())
     {
@@ -38,11 +38,11 @@ int main(){
     a.push_back("1");
     a.push_back("5");
     a.push_back("876");
-    sort(a.begin(), a.end(), compare);
+    sort(a.begin(), a.end(), Compare);
     for(auto i:a)
     {
         cout<<i<<" ";
     }
-    cout<<"\n";
+    cout<<endl;
     return 0;
 }
