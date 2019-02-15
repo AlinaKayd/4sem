@@ -1,9 +1,3 @@
-//
-//  alina.cpp
-//  
-//
-//  Created by Ayazhan on 14/02/2019.
-//
 
 #include "alina.hpp"
 
@@ -68,8 +62,10 @@ map<string, int> Make_map (ifstream& fd, int& n)
         s.push_back(tmp);
     }
     sort(s.begin(), s.end(), Comparator);
-    for(int i = 0; i < n; i++) {
-        cout << s.at(i).word << ": " << s.at(i).count << endl;
+    if(n > s.size())
+        n = s.size();
+    for(int i = 0; i < n ; i++) {
+        cout<< s.at(i).count  << ": " << s.at(i).word << endl;
     }
     fd.close();
     return rate;
